@@ -70,13 +70,9 @@ Then you can view the data in your Supabase database.
 ## Project Structure
 
 - `src/`: Contains all the source code.
-  - `index.ts`: Main file for the project.
-  - `scrape.ts`: File for scraping job listings.
-  - `clean.ts`: File for cleaning and formatting the scraped data.
-- `.env`: Environment variables file.
-- `.gitignore`: Git ignore file.
-- `package.json`: Node.js package file.
-- `tsconfig.json`: TypeScript configuration file.
+  - `analyze.ts`: Main file for the project for analyzing and update the sentiment on database.
+  - `analyze-ollama.ts`: Alternative file for the project for analyzing and update the sentiment on database using Ollama as LLM.
+  - `scrape.ts`: Main file for the project for scraping, cleaning and inserting the data to database.
 
 ## Contributing
 
