@@ -1,0 +1,30 @@
+{
+  "name": "job-scraping",
+  "version": "1.0.0",
+  "description": "Your project description",
+  "main": "analyze.js",
+  "scripts": {
+    "start": "ts-node src/analyze.ts",
+    "start-ollama": "ts-node src/analyze-ollama.ts",
+    "scrape": "ts-node src/scrape.ts",
+    "dev": "nodemon --exec ts-node src/analyze.ts",
+    "build": "tsc --outDir dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "faldyif",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/sanitize-html": "^2.11.0",
+    "nodemon": "^2.0.15",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.2"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.44.4",
+    "axios": "^1.7.2",
+    "ollama": "^0.5.2",
+    "openai": "^4.52.7",
+    "sanitize-html": "^2.13.0"
+  }
+}
