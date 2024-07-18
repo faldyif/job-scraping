@@ -49,20 +49,20 @@ This project is designed to scrape job listings from TechInAsia, clean and forma
 
 ## Usage
 
-To scrape job listings and analyze them, run the following command:
-
-```sh
-npm start
-# or
-yarn start
-```
-
-To only scrape job listings without analysis, run:
+To scrape job listings and push it to database, run the following command:
 
 ```sh
 npm run scrape
 # or
 yarn scrape
+```
+
+To do sentiment analysis and update the sentiment on database, run the following command:
+
+```sh
+npm start
+# or
+yarn start
 ```
 
 Then you can view the data in your Supabase database.
